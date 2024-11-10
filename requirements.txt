@@ -4,4 +4,11 @@ numpy
 pandas
 matplotlib
 opencv-python-headless
+opencv-python
 easyocr
+datasets
+huggingface-hub
+fastapi
+uvicorn
+PIL
+tqdm
