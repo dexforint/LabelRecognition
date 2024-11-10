@@ -7,6 +7,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.filters import CommandStart
 from aiogram.types import Message, ContentType
+from utils import recognize
 
 load_dotenv()
 
@@ -36,6 +37,8 @@ async def handle_photo(message: Message, bot: Bot):
 
     await bot.download_file(file_info.file_path, destination="./temp/photo.jpg")
     await message.answer("Фото успешно загружено! Обработка...")
+
+    detail_info = recognize("./temp/photo.jpg")
 
 
 # Обрабатываем команду /start
