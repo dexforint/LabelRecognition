@@ -1,0 +1,7 @@
+aiogram
+Levenshtein
+numpy
+pandas
+matplotlib
+opencv-python-headless
+easyocr
